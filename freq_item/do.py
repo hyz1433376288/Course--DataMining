@@ -66,7 +66,7 @@ with open('data.in', 'r') as f:
         for freq1_key in freq1:
             if not set(freq1_key).issubset(freq2_key):
                 pending_freq3 = freq2_key + freq1_key # tuple3 = tuple2 + tuple1
-                pending_freq3 = tuple(sorted(pending_freq3))# sorted the pending-key to duplicate removal , because the pending-key may appear before as an another ordership
+                pending_freq3 = tuple(sorted(pending_freq3))# sorted the pending-key to duplicate removal , because the pending-key may appear as an another ordership before
 
                 if pending_freq3 in freq3.keys():
                     continue
